@@ -1,25 +1,18 @@
+
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-node_modules
-.pnp
+/node_modules
+/.pnp
 .pnp.js
 
 # testing
-coverage
+/coverage
 
-# database
-prisma/db.sqlite
-prisma/db.sqlite-journal
-
-# next.js
-.next/
-out/
-next-env.d.ts
-
-# builds
-build
-dist/
+#cache
+.turbo
+.next
+.vercel
 
 # misc
 .DS_Store
@@ -31,20 +24,19 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
+
 # local env files
 .env*
 
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-
-# turbo
-.turbo
+out/
+build/
+dist/
 
 # plasmo - https://www.plasmo.com
 .plasmo
 
 # bpp - http://bpp.browser.market/
 keys.json
+
+# typescript
+.tsbuildinfo

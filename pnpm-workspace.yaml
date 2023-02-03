@@ -1,5 +1,5 @@
 packages:
-  - apps/expo
+  - apps/plasmo
   - apps/nextjs
   - packages/api
   - packages/auth
