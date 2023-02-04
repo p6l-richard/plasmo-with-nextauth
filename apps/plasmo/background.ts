@@ -16,9 +16,9 @@ chrome.runtime.onMessageExternal.addListener(
     )
     if (!sender.url?.includes(WEB_URL)) return // don't allow this web page access
 
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
     switch (request.action) {
       case "signin": {
-        console.log("request action is signin")
         // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
         const token = request.accessToken as string
         // get out storage value, and see if it's the same as incoming
